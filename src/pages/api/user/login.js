@@ -1,7 +1,7 @@
 import User from "../model/user";
 import bcrypt from "bcrypt";
 
-export default async function login(req, res) {
+export default async function POST(req, res) {
   try {
     if (req.method == "POST") {
       const body = req.body;

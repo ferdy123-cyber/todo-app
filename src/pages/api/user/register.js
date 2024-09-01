@@ -2,7 +2,7 @@ import User from "../model/user";
 import { v4 } from "uuid";
 import bcrypt from "bcrypt";
 
-export default async function register(req, res) {
+export default async function POST(req, res) {
   try {
     if (req.method == "POST") {
       const body = req.body;
